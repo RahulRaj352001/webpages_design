@@ -1,0 +1,335 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+ :root{
+     --navbar-height: 59px;
+ }
+ .navbar{
+        display: flex;
+        align-items: center;
+        /* justify-content: center; */
+        position: relative;
+        font-family: 'Zen Dots', cursive;
+   }
+.navbar::before{
+       content: "";
+      background-color: black;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      z-index: -3;
+      opacity: .5;
+
+   }
+
+  #logo{
+        margin: 2px 4px;
+  }
+  #logo img{
+      height: 90px;
+      margin:-6px -5px;
+      filter: invert(2);
+      border-radius: 20px;
+    
+  } 
+ .navbar ul{
+      display: flex;
+      /* flex: 1;
+      text-align: right; */
+      text-align: center;
+      justify-content: space-between;
+
+
+  }
+  .navbar ul li{
+       /* color: wheat; */
+       display: inline-block;
+       margin: 0 30px;
+       list-style: none;
+       font-size: 1.3rem;
+       text-align: center;
+        /* width: 200px; */
+        position: relative;
+
+  }
+  /* .navbar ul li span{
+    height: 100%;
+    width: 0%;
+    background: #02e7d0;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s;
+    
+}
+.item:hover span{
+    width:100%
+} */
+  .navbar ul li::after {
+         content: "";
+         height: 3px;
+         width:0;
+         background: #03dac4;
+         position: absolute;
+         left:0;
+         bottom: 0;
+         
+         transition: 0.5s;
+  } 
+  .navbar ul li:hover::after{
+      
+    width: 105%;
+
+  }
+
+  .navbar ul li a{
+            color: rgb(0, 0, 0);
+            display: block; 
+            padding: 5px 5px;
+            width: 100%;
+            text-decoration: none;
+            border-radius: 10px;
+            position: relative;
+            text-transform: uppercase;
+            /* border: 2px solid #009688; */
+            
+
+
+  }
+  
+  
+#home{
+     display: flex;
+     flex-direction:column;
+     padding: 3px 20px;
+     height: 400px;
+     justify-content: center;
+     align-items: center;
+     /* position: relative; */
+    
+     
+    
+}
+#home::before{
+    content: "";
+    background :url(../img/pizza-712667_1920.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 500px ;
+    width:100% ;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    opacity: 0.7;
+
+    
+}
+#home h1{
+       color: rgba(5, 5, 5, 0.7);
+       text-align: center;
+       font-family: 'Zen Dots', 'cursive';
+}
+#home p{
+    color: rgb(17, 17, 17);
+    text-align: center;
+    padding: 5px;
+    font-family: 'Zen Dots', "cursive";
+   
+}
+.btn{
+    border: 2px solid rgb(90, 196, 164);
+    padding: 8px 25px;
+    color:rgb(15, 14, 14);
+    background-color: rgba(226, 219, 219,0.5);
+    width: 150px;
+    background: transparent;
+    /* margin: 17px; */
+    position: relative;
+    top: 20px;
+    border-radius: 10px;
+    cursor:progress;
+    text-align: center;
+}
+span{
+    height: 100%;
+    width: 0;
+    background: #009688;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+    
+}
+.btn:hover span{
+    width:100%
+}
+.btn:hover{
+    /* border: none; */
+
+}
+button a{
+     text-decoration: none;
+     color:rgb(12, 22, 12);
+     font-weight: bold;
+     font-size: larger;
+     cursor: progress;
+}
+
+ /* section services */
+ #services-container{
+        position: relative;
+        top: 10px;
+        padding: 20px;
+ }
+   #services{
+       margin: 34px; 
+       display: flex;
+
+   }
+  
+   #services .box{
+       padding: 22px;
+       margin: 4px 10px;
+       border: 2px solid brown;
+       border-radius: 20px;
+       background-color:#f5e9e9;
+         
+   }
+   #services .box img{
+         height:110px;
+         margin: auto;
+         display: block;
+         border-radius:20%;
+         /* text-decoration-style: dashed; */
+         
+   }
+   #services{
+         
+   }
+   /* client section */
+   #client-section{
+       position: relative;
+       height: 300px;
+       
+   }
+   #client-section::before{
+      content: "";
+      position: absolute ;
+      background: url(../img/pizza-712667_1920.jpg) no-repeat center center/cover;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      opacity: 0.6;
+   }
+   #clients{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+    }
+    .client-items{
+        padding: 32px;
+    }
+    .client-items img{
+       height: 80px;
+    }
+  /* contact   */
+
+  #contact{
+        position: relative;
+        padding-top: 20px;
+  }
+  #contact::before{
+      content: "";
+      position: absolute;
+      background: url(../img/pizza-3010062_1920.jpg) no-repeat center center/cover;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      opacity: .6;
+  }
+  #contact-box{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 20px;
+  } 
+  #contact-box textarea,
+  #contact-box input{
+         width: 100%;
+         border-radius: 5px;
+         font-size: 1.2rem;
+         
+  } 
+ #contact-box form{
+     width: 40%;
+ }
+ #contact-box label{
+     font-size: 1.1rem;
+     font-family: 'Zen Dots', "cursive";
+     cursor: pointer;
+ }
+
+  
+
+  /* footer */
+  footer{
+      background-color: rgb(6, 7, 7);
+      color: white;
+      padding: 10px 20px;
+  }
+
+/* utilites calsses/ */
+.h-primary{
+    padding: 12px;
+    font-size: 2.4rem;
+    font-family: 'Zen Dots', "cursive";
+    /* margin: 2px; */
+}
+.h-secondary{
+    padding: 12px;
+    font-size: 1.4rem;
+    font-family: 'Zen Dots', cursive;
+    /* margin: 2px; */
+}
+.btn{
+    border: 2px solid rgb(90, 196, 164);
+    padding: 8px 25px;
+    color:rgb(15, 14, 14);
+    background-color: rgba(226, 219, 219,0.5);
+    width: 150px;
+    background: transparent;
+    /* margin: 17px; */
+    position: relative;
+    top: 20px;
+    border-radius: 10px;
+    cursor:progress;
+    text-align: center;
+}
+span{
+    height: 100%;
+    width: 0;
+    background: #009688;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+    
+}
+.btn:hover span{
+    width:100%
+}
+.center{
+    text-align: center;
+    text-transform: uppercase;
+}
+.bold{
+    font-weight: bolder;
+}

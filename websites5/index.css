@@ -1,0 +1,137 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to right,#9c27b0,#8ecdff);
+}
+
+nav{
+    width: 80%;
+    position: sticky;
+    margin: 20px auto;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+.logo{
+    flex-basis: 20%;
+
+}
+.logo img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-family:fantasy;
+    font-weight: bold;
+}
+.nav-links ul img{
+    width: 30px;
+
+}
+.info{
+    width: 1000px;
+    height: 1000px;
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    transform: translateY(-50%);
+}
+#circle{
+    width: 1000px;
+    height: 1000px;
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    transform: rotate(0deg);
+    transition:1s;
+    /* background: rgb(214, 213, 213); */
+    /* transform: translateY(-50%); */
+}
+.features img{
+    width: 70px;
+}
+.features{
+    position: absolute;
+    display: flex;
+    color: #fff;
+
+}
+.features div {
+   padding-left: 10px;
+}
+  .one{
+      top:450px;
+      right: 50px;
+      transform: rotate(0deg);
+  }
+  .two{
+      top:150px;
+     left: 400px;
+     transform: rotate(270deg);
+  }
+  .three{
+      bottom:450px;
+      left: 50px;
+      transform: rotate(180deg);
+  }
+  .four{
+      bottom:150px;
+      right: 450px;
+      transform: rotate(90deg);
+  }
+
+.mobile{
+    width: 180px;
+    position: absolute;
+    top: 50%;
+    left: 42%;
+    transform: translateY(-50%);
+    z-index:1;
+}
+.controls{
+    text-align: center;
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.controls h2{
+    margin: 15px 0;
+    color:#fff;
+}
+#upbtn{
+    width: 15px;
+    cursor: pointer;
+}
+#downbtn{
+    width: 15px;
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+.overlay{
+    width: 0;
+    height: 0;
+    border-top: 500px solid white;
+    border-right: 500px solid transparent;
+    border-left: 500px solid white;
+    border-bottom: 500px solid white;
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Red-Store/products</title>
+    <link rel="stylesheet" href="store.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet" />
+    <!-- CSS only -->
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css" /> -->
+</head>
+
+<body>
+    
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                  <a href="index.html"><img src="images/logo.png" width="145px" /></a>
+                </div>
+                <ul id="menuitems">
+                  <li><a href="index.html"> Home</a></li>
+                  <li><a href="index2.html"> Products</a></li>
+                  <li><a href=""> About</a></li>
+                  <li><a href=""> contact</a></li>
+                  <li><a href="account.html"> Account</a></li>
+                </ul>
+                <div class="cart-menu">
+                 <a href="cart.html"> <img src="images/cart.png" class="cart right" alt="no cart" width="30px" style="margin-top: 25px" /></a>
+                  <img src="images/menu.png" onclick="menutoggle()" class="cart menu right"  width="30px"  />
+                </div>
+              </nav>
+            <!-- <hr class="nav-hr" /> -->
+        </div>
+     
+
+    <div class="account-page">
+        <div class="container">
+             <div class="row">
+                 <div class="col2">
+                     <img src="images/image1.png" alt="" width="100%">
+                 </div>
+                 <div class="col2">
+                      <div class="form-container">
+                           <div class="form-btn">
+                               <span onclick="login()">Login</span>
+                               <span onclick="reg()">Register</span>
+                               <hr id="indicator">
+
+                           </div>
+                           <form id="loginform" action="">
+                               <input type="text" placeholder="Username">
+                               <input type="password" placeholder="password">
+                               <button type="submit" class="btn"> Login</button>
+                               <a href="" class="small-text" style="font-size: xx-small;"> forget password</a>
+                           </form>
+                           <form  id="regform" action="">
+                               <input type="text" placeholder="Username">
+                               <input type="number" placeholder="mobile no">
+                               <input type="email" placeholder="email" >
+                               <input type="password" placeholder="password">
+                               <button type="submit" class="btn"> Register</button>
+                               <!-- <a href="" class="small-text" style="font-size: xx-small;"> forget password</a> -->
+                           </form>
+                      </div>
+                 </div>
+             </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>download our app</h3>
+                    <p>Lorem ipsum sectetur adipisicing elit.
+                        tatis magni?</p>
+                    <img src="images/play-store.png" alt="">
+                    <img src="images/app-store.png" alt="">
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo-white.png" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Quo necessitatibus non quam voluptas veritatis magni?</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>useful links</h3>
+                    <ul>
+                        <li>coopen</li>
+                        <li>blog post</li>
+                        <li>return policy</li>
+                        <li>join affilated</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>follow</h3>
+                    <ul>
+                        <li>facebook</li>
+                        <li>instagram</li>
+                        <li>twitter</li>
+                        <li>youtube</li>
+                    </ul>
+                </div>
+
+            </div>
+            <hr>
+            <p class="copyright"> Copyright--2021 Rahul Websites</p>
+        </div>
+
+    </footer>
+    <!-- js for toggle -->
+
+     <script>
+        let menuitemsj=document.getElementById("#menuitems");
+        menuitems.style.maxHeight = "0px";
+        function menutoggle() {
+            if (menuitems.style.maxHeight == "0px") {
+                menuitems.style.maxHeight = "250px";
+            }
+            else {
+                menuitems.style.maxHeight = "0px";
+            }
+        }
+       </script>
+   <!-- ----js for toggle form-----{ -->
+    
+   
+    <script>
+    //    var loginform=document.getElementsById("loginform");
+    //    var regform=document.getElementsById("regform");
+    //    var indicator=document.getElementsById("indicator");
+          
+        function reg(){
+            regform.style.transform ="translateX(0px)";
+            loginform.style.transform ="translateX(0px)";
+          
+            indicator.style.transform="translateX(100px)";
+        
+
+        }
+        function login(){
+            indicator.style.transform="translateX(00px)";
+            regform.style.transform ="translateX(250px)";
+            loginform.style.transform ="translateX(250px)";
+           
+          
+        }
+
+    </script>
+    
+</body>
+
+</html>

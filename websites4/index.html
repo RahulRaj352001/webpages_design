@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thapa-foods</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <img src="logo.png" alt="" />
+        </div>
+        <nav>
+          <ul id="menuitems">
+            <li><a href="http://">home</a></li>
+            <li><a href="http://">offer</a></li>
+            <li><a href="http://">signup</a></li>
+            <li><a href="http://">cart</a></li>
+          </ul>
+          <img
+            src="menu.png"
+            onclick="menutoggle()"
+            class="cart menu right"
+            width="30px"
+            height="30px"
+          />
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      <h1>
+        Lorem ipsum dolor sit amet <span>Food </span> . <br />
+        consectetur hndipisicing elit. Possimus, fugit aut option
+      </h1>
+      <a href="" class="btn btn-full">click to order</a>
+
+      <a href="" class="btn btn-half">show more</a>
+    </div>
+
+    <script>
+            menuitems.style.maxHeight="0px";
+       function menutoggle(){
+        if(menuitems.style.maxHeight=="0px"){
+          menuitems.style.maxHeight="250px";
+          alert("hgccfg")
+        }
+        else{
+          menuitems.style.maxHeight="0px";
+          alert("hhh")
+        }
+       }
+    </script>
+  </body>
+</html>

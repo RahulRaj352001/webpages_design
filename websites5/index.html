@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="main">
+      <nav>
+        <div class="logo">
+          <img src="images/logo.png" alt="none" />
+        </div>
+        <div class="nav-links">
+          <ul id="menuitems">
+            <li><a href=""> Home</a></li>
+            <li><a href=""> Products</a></li>
+            <li><a href=""> accessories</a></li>
+            <li><a href=""> contact</a></li>
+            <li><a href=""> Account</a></li>
+
+            <img src="images/cart.png" alt="" width="20%" />
+          </ul>
+        </div>
+      </nav>
+      <div class="info">
+          <div class="overlay"></div>
+        <img src="images/mobile.png" alt="" class="mobile" />
+        <div id="circle">
+          <div class="features one">
+            <img src="images/camera.png" alt="" />
+            <div>
+              <h2>camera</h2>
+              <p>12mp,wide angle</p>
+            </div>
+          </div>
+          <div class="features two">
+            <img src="images/processor.png" alt="" />
+            <div>
+              <h2>processor</h2>
+              <p>720 snapdragon</p>
+            </div>
+          </div>
+          <div class="features three">
+            <img src="images/display.png" alt="" />
+            <div>
+              <h2>display</h2>
+              <p>amoled 16</p>
+            </div>
+          </div>
+          <div class="features four">
+            <img src="images/battery.png" alt="" />
+            <div>
+              <h2>battery</h2>
+              <p>5000mah</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="controls">
+        <img src="images/arrow.png" alt="" id="upbtn" />
+        <h2>features</h2>
+        <img src="images/arrow.png" alt="" id="downbtn" />
+      </div>
+    </div>
+
+    <script>
+      var circle = document.getElementById("circle");
+    
+      var rotatevalue = circle.style.transform;
+      var rotatesum;
+      upbtn.onclick = function() 
+      {
+        rotatesum = rotatevalue + "rotate(-90deg)";
+        // console.log("hgjjfg")
+        circle.style.transform=rotatesum;
+        rotatevalue=rotatesum;
+      }
+      downbtn.onclick = function() 
+      {
+        rotatesum = rotatevalue + "rotate(90deg)";
+        // console.log("hgjjfg")
+        circle.style.transform=rotatesum;
+        rotatevalue=rotatesum;
+      }
+    </script>
+  </body>
+</html>

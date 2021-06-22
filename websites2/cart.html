@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Red-Store/products</title>
+    <link rel="stylesheet" href="store.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet" />
+    <!-- CSS only -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css" /> -->
+</head>
+
+<body>
+   
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                  <a href="index.html"><img src="images/logo.png" width="145px" /></a>
+                </div>
+                <ul id="menuitems">
+                  <li><a href="index.html"> Home</a></li>
+                  <li><a href="index2.html"> Products</a></li>
+                  <li><a href=""> About</a></li>
+                  <li><a href=""> contact</a></li>
+                  <li><a href="account.html"> Account</a></li>
+                </ul>
+                <div class="cart-menu">
+                 <a href="cart.html"> <img src="images/cart.png" class="cart right" alt="no cart" width="30px" style="margin-top: 25px" /></a>
+                  <img src="images/menu.png" onclick="menutoggle()" class="cart menu right"  width="30px"  />
+                </div>
+              </nav>
+            <!-- <hr class="nav-hr" /> -->
+        </div>
+  
+
+     <div class="small-container cart-page">
+         <table>
+             <tr>
+                 <th>product</th>
+                 <th>quantity</th>
+                 <th>subtotal</th>
+             </tr>
+             <tr>
+                 <td>
+                     <div class="cart-info">
+                          <img src="images/buy-1.jpg" alt="">
+                         <div>
+                             <p>red printed t-shirt</p>
+                             <small>price: $50.00</small>
+                             <br>
+                             <a href="">remove</a>
+                            </div>
+                        </div>
+
+                 </td>
+                 <td><input type="number" value="1"></td>
+                 <td>$50.00</td>
+             </tr>
+             <tr>
+                 <td>
+                     <div class="cart-info">
+                          <img src="images/buy-3.jpg" alt="">
+                         <div>
+                             <p>red printed t-shirt</p>
+                             <small>price: $30.00</small>
+                             <br>
+                             <a href="">remove</a>
+                            </div>
+                        </div>
+
+                 </td>
+                 <td><input type="number" value="1"></td>
+                 <td>$30.00</td>
+             </tr>
+             <tr>
+                 <td>
+                     <div class="cart-info">
+                          <img src="images/buy-2.jpg" alt="">
+                         <div>
+                             <p>red printed t-shirt</p>
+                             <small>price: $80.00</small>
+                             <br>
+                             <a href="">remove</a>
+                            </div>
+                        </div>
+
+                 </td>
+                 <td><input type="number" value="1"></td>
+                 <td>$80.00</td>
+             </tr>
+         </table>
+         
+         <div class="total-price">
+             <table>
+                 <tr>
+                     <td>subtotal</td>
+                     <td>$200.00</td>
+                    </tr>
+                    <tr>
+                        <td>tax</td>
+                        <td>$20.00</td>
+                    </tr>
+                    <tr>
+                        <td>total</td>
+                        <td>$220.00</td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                            <button class="btn" style="background-color: aquamarine;" > Shop Now</button> 
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+            
+    
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>download our app</h3>
+                    <p>Lorem ipsum sectetur adipisicing elit.
+                        tatis magni?</p>
+                    <img src="images/play-store.png" alt="">
+                    <img src="images/app-store.png" alt="">
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo-white.png" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Quo necessitatibus non quam voluptas veritatis magni?</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>useful links</h3>
+                    <ul>
+                        <li>coopen</li>
+                        <li>blog post</li>
+                        <li>return policy</li>
+                        <li>join affilated</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>follow</h3>
+                    <ul>
+                        <li>facebook</li>
+                        <li>instagram</li>
+                        <li>twitter</li>
+                        <li>youtube</li>
+                    </ul>
+                </div>
+
+            </div>
+            <hr>
+            <p class="copyright"> Copyright--2021 Rahul Websites</p>
+        </div>
+
+    </footer>
+    <!-- js for toggle -->
+
+     <script>
+     
+        // let menuitemsj=document.getElementById("#menuitems")
+        menuitems.style.maxHeight = "0px";
+        function menutoggle() {
+            if (menuitems.style.maxHeight == "0px") {
+                menuitems.style.maxHeight = "250px";
+            }
+            else {
+                menuitems.style.maxHeight = "0px";
+            }
+        }
+       </script>
+       <script>
+               $("footer").hide();
+       </script>
+
+    
+</body>
+
+</html>
